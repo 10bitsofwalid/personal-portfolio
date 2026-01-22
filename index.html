@@ -16,32 +16,43 @@
 
 <body>
 
+    <!--background elements-->
+    <div class="bg-container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+    </div>
+
     <!--header section-->
     <header>
         <a href="#" class="logo">Walid</a>
 
-        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <div class="header-right">
+            <a href="#" class="btn resume-btn">Resume <i class="fa-solid fa-download"></i></a>
+            <div class="theme-toggle" id="theme-btn"><i class="fa-solid fa-moon"></i></div>
+            <div class="menu-toggle" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </div>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!--home section-->
     <section class="home" id="home">
         <div class="home-img">
-            <img src="assets/walidimg2.jpg" alt="walid's photo">
+            <img src="assets/walidimg2.jpg" alt="walid's photo" loading="lazy">
         </div>
         <div class="home-content">
             <h1>Mohammad <span>Walid</span> Rahman</h1>
             <h3 class="typing-text">I am a <span></span></h3>
-            <p>Beginner software engineer passionate about web development and problem-solving.
-                I love learning, experimenting, and building creative projects.</p>
+            <p>Beginner Software Engineer and technology enthusiast based in Dhaka, Bangladesh.
+                Passionate about building scalable applications, problem-solving, and continuous learning.
+                Specialized in Web Development, Cyber-security, and modern software practices.</p>
 
             <!--social icons-->
             <div class="socials">
@@ -93,100 +104,220 @@
     <section class="projects" id="projects">
         <h2 class="heading">Recent <span>Projects</span></h2>
         <div class="project-container">
-            <div class="project-box">
-                <img src="assets/sc1.png" alt="project 1">
+            <div class="project-box" data-tilt>
+                <img src="https://raw.githubusercontent.com/10bitsofwalid/online-budget-tracker/main/screenshot.png"
+                    alt="Real-Time Chat App" loading="lazy">
+                <h3>Real-Time Chat Application</h3>
+                <p>A full-stack messaging platform featuring instant communication with Socket.io, secure
+                    authentication, and responsive design.</p>
+                <a href="#" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="project-box" data-tilt>
+                <img src="assets/sc1.png" alt="Portfolio Website" loading="lazy">
                 <h3>Portfolio Website</h3>
-                <p>A simple responsive personal website built with HTML, CSS & JS.</p>
-                <a href="https://github.com/10bitsofwalid/personal-portfolio" target="_blank" class="btn">View
-                    Project</a>
+                <p>A premium personal showcase built with polished UI, glassmorphism, and interactive animations.</p>
+                <a href="https://github.com/10bitsofwalid/personal-portfolio" target="_blank" class="btn">Source
+                    Code</a>
             </div>
-            <div class="project-box">
-                <img src="assets/sc2.png" alt="project 1">
-                <h3>Bank Account Management System</h3>
-                <p>A simple responsive atm account management system built with C language.</p>
+            <div class="project-box" data-tilt>
+                <img src="assets/sc3.png" alt="Budget Tracker" loading="lazy">
+                <h3>Online Budget Tracker</h3>
+                <p>A financial monitoring tool for tracking income/expenses with real-time balance updates and intuitive
+                    insights.</p>
+                <a href="https://online-budget-tracker.vercel.app/" target="_blank" class="btn">Live Site</a>
+            </div>
+            <div class="project-box" data-tilt>
+                <img src="assets/sc2.png" alt="Banking System" loading="lazy">
+                <h3>Bank Management System</h3>
+                <p>A robust C-based application utilizing Linked Lists and File I/O for secure account management and
+                    persistent storage.</p>
                 <a href="https://github.com/10bitsofwalid/code-with-c/tree/main/capstone%20project" target="_blank"
-                    class="btn">View Project</a>
+                    class="btn">View Source</a>
             </div>
-            <div class="project-box">
-                <img src="assets/sc3.png" alt="project 1">
-                <h3>Personal Finance Management Application</h3>
-                <p>A web-based application that enables users to track income and expenses, view real-time balance
-                    updates, and manage personal finances through a clean, user-friendly interface.</p>
-                <a href="https://github.com/10bitsofwalid/online-budget-tracker" target="_blank" class="btn">View
-                    Project</a>
-                <a href="https://online-budget-tracker.vercel.app/" target="_blank" class="btn">View Live Site</a>
+        </div>
+    </section>
+
+    <!--education & experience section-->
+    <section class="education-experience" id="education">
+        <h2 class="heading">Journey & <span>Education</span></h2>
+        <div class="timeline-container">
+            <div class="timeline-box">
+                <div class="timeline-content">
+                    <div class="date">2024 - 2028 (Expected)</div>
+                    <h3>Daffodil International University (DIU)</h3>
+                    <p>B.Sc. in Computer Science and Engineering. Currently focusing on core algorithms, web
+                        technologies, and software engineering principles.</p>
+                </div>
+            </div>
+            <div class="timeline-box">
+                <div class="timeline-content">
+                    <div class="date">2023 - Present</div>
+                    <h3>Project-Based Learning</h3>
+                    <p>Self-guided exploration of full-stack development, cyber-security, and scalable system design
+                        through hands-on projects.</p>
+                </div>
+            </div>
+            <div class="timeline-box">
+                <div class="timeline-content">
+                    <div class="date">2021 - 2023</div>
+                    <h3>Higher Secondary Certificate</h3>
+                    <p>Completed college education with a focus on Science and Mathematics, building a strong foundation
+                        for engineering studies.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!--skills section-->
     <section class="skills" id="skills">
-        <h2 class="heading">Technical <span>Skills</span></h2>
-        <div class="skills-list">
+        <h2 class="heading">Technical <span>Stack</span></h2>
 
-            <!--skill bars-->
-            <div class="skill"><span>HTML</span>
-                <div class="bar">
-                    <div class="fill html"></div>
-                </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
             </div>
-            <div class="skill"><span>CSS</span>
-                <div class="bar">
-                    <div class="fill css"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
             </div>
-            <div class="skill"><span>JavaScript</span>
-                <div class="bar">
-                    <div class="fill js"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
             </div>
-            <div class="skill"><span>C</span>
-                <div class="bar">
-                    <div class="fill c"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-node-js"></i>
+                <h3>Node.js</h3>
             </div>
-            <div class="skill"><span>C++</span>
-                <div class="bar">
-                    <div class="fill C++"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
             </div>
-            <div class="skill"><span>Python</span>
-                <div class="bar">
-                    <div class="fill python"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-c"></i>
+                <h3>C / C++</h3>
             </div>
-            <div class="skill"><span>Java</span>
-                <div class="bar">
-                    <div class="fill java"></div>
-                </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Vercel</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Security</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Terminal</h3>
             </div>
         </div>
     </section>
 
+    <!--github activity section-->
+    <section class="github-activity">
+        <h2 class="heading">Coding <span>Activity</span></h2>
+        <div class="github-chart">
+            <img src="https://ghchart.rshah.org/b74b4b/10bitsofwalid" alt="Walid's Github Chart" />
+        </div>
+    </section>
+
     <!--contact section-->
-    <section>
+    <section class="contact" id="contact">
         <h2 class="heading">Get In <span>Touch</span></h2>
-        <form>
+        <form id="contact-form">
             <div class="input-box">
                 <input type="text" placeholder="Full Name" required>
                 <input type="email" placeholder="Email Address" required>
             </div>
-            <textarea placeholder="Your meassage" rows="6" required></textarea>
-            <button type="submit" class="btn">Send Meassage</button>
+            <div class="input-box">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <!--footer-->
+    <!--footer-->
     <footer>
-        <p>© 2025 Walid Rahman</p>
+        <p>© <span id="year"></span> Walid Rahman | Designed with <i class="fa-solid fa-heart"
+                style="color: var(--main-color);"></i></p>
     </footer>
 
+    <!-- back to top -->
+    <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
     <script>
-        const menu = document.querySelector('.menu-toggle');
+        const menuIcon = document.querySelector('#menu-icon');
         const navbar = document.querySelector('.navbar');
-        menu.addEventListener('click', () => {
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('fa-xmark');
             navbar.classList.toggle('active');
-        })
+        }
+
+        // Theme toggle logic
+        const themeBtn = document.querySelector('#theme-btn');
+        const themeIcon = themeBtn.querySelector('i');
+
+        themeBtn.onclick = () => {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        };
+
+        // Active link on scroll
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header nav a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                    });
+                };
+            });
+
+            // Header sticky effect
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 100);
+
+            // Remove toggle icon and navbar when click navbar links (scroll)
+            menuIcon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+
+            // Back to top button visibility
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 500) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        };
+
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
 </body>
